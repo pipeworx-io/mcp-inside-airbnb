@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-inside-airbnb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "inside-airbnb -- short-term rental listings by city (fleet #2973).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-inside-airbnb": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "inside-airbnb"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-inside-airbnb.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/inside-airbnb",
   "pipeworx": {
-    "sourceHash": "v1-c2ff96a581fc4f3faf6063fde83964db8ae673e3631aece5458e18d58cec4254",
-    "sourceCommit": "3723e46c6d115bd4a1fd2175e6bf758555e7cb50"
+    "mode": "gateway",
+    "slug": "inside-airbnb",
+    "gatewaySlug": "inside-airbnb",
+    "sourceHash": "v1-0d921f8a87a1947a9a6c9bed72676ac21b4c6d4ebceeeb1dd48df51bbe0e07a9",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }

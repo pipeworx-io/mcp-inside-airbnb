@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/inside-airbnb",
   "title": "Inside Airbnb",
   "description": "inside-airbnb -- short-term rental listings by city (fleet #2973).",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/inside-airbnb",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-inside-airbnb",
